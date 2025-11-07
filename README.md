@@ -1,1 +1,1 @@
-A basic react app
+A basic react app that creates profiles
