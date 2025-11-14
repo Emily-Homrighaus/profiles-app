@@ -5,6 +5,8 @@ import ProfileCard from './components/ProfileCard.jsx';
 import { profiles } from './data/profiles.js';
 
 export default function App() {
+  const [people, setPeople] = useState(profiles);
+  setPeople(ps => ps.map(p => p.id===id? { ...p, likes: p.likes+1 } : p));
   return (
     <Container className="py-4">
       <h1 className="mb-4 text-center">Profiles</h1>
